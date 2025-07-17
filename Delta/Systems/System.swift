@@ -14,7 +14,7 @@ import GBCDeltaCore
 import NESDeltaCore
 import N64DeltaCore
 import MelonDSDeltaCore
-import Systems
+import GPGXDeltaCore
 
 enum System: CaseIterable
 {

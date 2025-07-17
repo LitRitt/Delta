@@ -9,13 +9,6 @@ target 'Delta' do
     pod 'SDWebImage', '~> 3.8'
     pod 'SMCalloutView', '~> 2.1.0'
 
-    pod 'DeltaCore', :path => 'Cores/DeltaCore'
-    pod 'NESDeltaCore', :path => 'Cores/NESDeltaCore'
-    pod 'SNESDeltaCore', :path => 'Cores/SNESDeltaCore'
-    pod 'N64DeltaCore', :path => 'Cores/N64DeltaCore'
-    pod 'GBCDeltaCore', :path => 'Cores/GBCDeltaCore'
-    pod 'GBADeltaCore', :path => 'Cores/GBADeltaCore'
-    pod 'MelonDSDeltaCore', :path => 'Cores/MelonDSDeltaCore'
     pod 'Roxas', :path => 'External/Roxas'
     pod 'Harmony', :path => 'External/Harmony'
 end
@@ -23,21 +16,5 @@ end
 target 'DeltaPreviews' do
     use_modular_headers!
 
-    pod 'DeltaCore', :path => 'Cores/DeltaCore'
     pod 'Roxas', :path => 'External/Roxas'
-end
-
-# Unlink DeltaCore to prevent conflicts with Systems.framework
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        if target.name == "Pods-Delta"
-            puts "Updating #{target.name} OTHER_LDFLAGS"
-            target.build_configurations.each do |config|
-                xcconfig_path = config.base_configuration_reference.real_path
-                xcconfig = File.read(xcconfig_path)
-                new_xcconfig = xcconfig.sub('-l"DeltaCore"', '')
-                File.open(xcconfig_path, "w") { |file| file << new_xcconfig }
-            end
-        end
-    end
 end

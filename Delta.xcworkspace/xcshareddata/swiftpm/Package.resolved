@@ -1,70 +1,50 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "AltKit",
-        "repositoryURL": "https://github.com/altstoreio/AltKit.git",
-        "state": {
-          "branch": null,
-          "revision": "2fd376df1c79ec06a5c80cc8933da027f65b3148",
-          "version": null
-        }
-      },
-      {
-        "package": "DeltaCore",
-        "repositoryURL": "https://github.com/rileytestut/DeltaCore.git",
-        "state": {
-          "branch": "ios14",
-          "revision": "cdd384dbacd5033183bbc3697c9738e3fb0b1d07",
-          "version": null
-        }
-      },
-      {
-        "package": "KeychainAccess",
-        "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess.git",
-        "state": {
-          "branch": null,
-          "revision": "84e546727d66f1adc5439debad16270d0fdd04e7",
-          "version": "4.2.2"
-        }
-      },
-      {
-        "package": "RevenueCat",
-        "repositoryURL": "https://github.com/RevenueCat/purchases-ios-spm.git",
-        "state": {
-          "branch": null,
-          "revision": "3dd291434fd63594b8ada87bca960e001b708241",
-          "version": "5.8.0"
-        }
-      },
-      {
-        "package": "rcheevos",
-        "repositoryURL": "https://github.com/rileytestut/rcheevos.git",
-        "state": {
-          "branch": "main",
-          "revision": "30848fc5a6ed563dc2c5abac6a750c6d3ba51c6b",
-          "version": null
-        }
-      },
-      {
-        "package": "ShowTouches",
-        "repositoryURL": "https://github.com/Cyberbeni/ShowTouches.git",
-        "state": {
-          "branch": "master",
-          "revision": "1c32407861e20ee2b046e1119c36e9d6385b4ab0",
-          "version": null
-        }
-      },
-      {
-        "package": "ZIPFoundation",
-        "repositoryURL": "https://github.com/weichsel/ZIPFoundation.git",
-        "state": {
-          "branch": null,
-          "revision": "f6a22e7da26314b38bf9befce34ae8e4b2543090",
-          "version": "0.9.15"
-        }
+  "originHash" : "c4ebf555d28d802ecbbc488a66ef1c55f4891343949a0fefab9fca439c9df89b",
+  "pins" : [
+    {
+      "identity" : "altkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/altstoreio/AltKit.git",
+      "state" : {
+        "revision" : "2fd376df1c79ec06a5c80cc8933da027f65b3148"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess.git",
+      "state" : {
+        "revision" : "84e546727d66f1adc5439debad16270d0fdd04e7",
+        "version" : "4.2.2"
+      }
+    },
+    {
+      "identity" : "purchases-ios-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RevenueCat/purchases-ios-spm.git",
+      "state" : {
+        "revision" : "3dd291434fd63594b8ada87bca960e001b708241",
+        "version" : "5.8.0"
+      }
+    },
+    {
+      "identity" : "rcheevos",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rileytestut/rcheevos.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "30848fc5a6ed563dc2c5abac6a750c6d3ba51c6b"
+      }
+    },
+    {
+      "identity" : "showtouches",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Cyberbeni/ShowTouches.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "1c32407861e20ee2b046e1119c36e9d6385b4ab0"
+      }
+    }
+  ],
+  "version" : 3
 }

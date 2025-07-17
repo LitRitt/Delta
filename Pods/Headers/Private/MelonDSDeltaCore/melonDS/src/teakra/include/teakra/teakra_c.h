@@ -1,1 +1,0 @@
-../../../../../../../../../Cores/MelonDSDeltaCore/melonDS/src/teakra/include/teakra/teakra_c.h

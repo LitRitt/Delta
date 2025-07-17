@@ -102,10 +102,8 @@
 		BF647A6A22FB8FCE0061D76D /* Bundle+SwizzleBundleID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF647A6922FB8FCE0061D76D /* Bundle+SwizzleBundleID.swift */; };
 		BF6866171DCAC8B900BF2D06 /* ControllerSkin+Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6866161DCAC8B900BF2D06 /* ControllerSkin+Configuring.swift */; };
 		BF696B801D9B2B02009639E0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF696B7F1D9B2B02009639E0 /* Theme.swift */; };
-		BF69FBA223E375A20051BEEA /* libVBA-M.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF69FBA123E375A20051BEEA /* libVBA-M.a */; };
 		BF69FBA823E396860051BEEA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF69FBA723E3967B0051BEEA /* libz.tbd */; };
 		BF69FBAA23E399AA0051BEEA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF69FBA923E399AA0051BEEA /* CoreMotion.framework */; };
-		BF69FBC923E3A8380051BEEA /* libNestopia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF69FBC823E3A8380051BEEA /* libNestopia.a */; };
 		BF6BF3131EB7E47F008E83CD /* ImportOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6BF3121EB7E47F008E83CD /* ImportOption.swift */; };
 		BF6BF3181EB82111008E83CD /* iTunesImportOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6BF3171EB82111008E83CD /* iTunesImportOption.swift */; };
 		BF6BF31A1EB82146008E83CD /* ClipboardImportOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6BF3191EB82146008E83CD /* ClipboardImportOption.swift */; };
@@ -138,8 +136,6 @@
 		BFC3628021ADE2BA00EF2BE6 /* UIAlertController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC3627F21ADE2BA00EF2BE6 /* UIAlertController+Error.swift */; };
 		BFC6F7B81F435BC500221B96 /* Input+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F7B71F435BC500221B96 /* Input+Display.swift */; };
 		BFC9B7391CEFCD34008629BB /* CheatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9B7381CEFCD34008629BB /* CheatsViewController.swift */; };
-		BFCADF1E25D22FE2008D78FB /* Systems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E70C225D22F7600E41CD1 /* Systems.framework */; };
-		BFCADF1F25D22FE2008D78FB /* Systems.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E70C225D22F7600E41CD1 /* Systems.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFCEA67E1D56FF640061A534 /* UIViewControllerContextTransitioning+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEA67D1D56FF640061A534 /* UIViewControllerContextTransitioning+Conveniences.swift */; };
 		BFD097211D3A01B8005A44C2 /* SaveStatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3540041C5DA70400C1184C /* SaveStatesViewController.swift */; };
 		BFD1EF402336BD8800D197CF /* UIDevice+Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1EF3F2336BD8800D197CF /* UIDevice+Processor.swift */; };
@@ -164,9 +160,6 @@
 		BFFC46231D5984A000AF2CC6 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC46221D5984A000AF2CC6 /* LaunchViewController.swift */; };
 		BFFC46461D59861000AF2CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFC46441D59861000AF2CC6 /* LaunchScreen.storyboard */; };
 		BFFC464C1D5998D600AF2CC6 /* CheatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC464B1D5998D600AF2CC6 /* CheatTableViewCell.swift */; };
-		BFFDF03723E3BB2600931B96 /* libSnes9x.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFDF03623E3BB2600931B96 /* libSnes9x.a */; };
-		BFFDF03F23E3C28A00931B96 /* libGambatte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFDF03D23E3C0F000931B96 /* libGambatte.a */; };
-		BFFDF04623E3D3A600931B96 /* libMupen64Plus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFDF04523E3D3A600931B96 /* libMupen64Plus.a */; };
 		C6F24AD72D64B452002F939F /* Lu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F24AD62D64B452002F939F /* Lu.swift */; };
 		C6F24AD92D64B550002F939F /* PauseViewController+Lu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F24AD82D64B550002F939F /* PauseViewController+Lu.swift */; };
 		C6F24ADB2D64B5A0002F939F /* Lu-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6F24ADA2D64B5A0002F939F /* Lu-Info.plist */; };
@@ -259,8 +252,28 @@
 		D5B4235C2BD9C24000093054 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4235B2BD9C24000093054 /* RoundedImageView.swift */; };
 		D5B6F5D32D6FC0F50061C365 /* FollowUsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B6F5D22D6FC0F00061C365 /* FollowUsFooterView.swift */; };
 		D5B6F5D52D6FC23E0061C365 /* FollowUsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B6F5D42D6FC23E0061C365 /* FollowUsFooterView.xib */; };
+		D5B7242C2E26DC6700D3E5F3 /* ZIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF07200E219A3A9500F05DA4 /* ZIPFoundation.framework */; };
+		D5B7242D2E26DC6700D3E5F3 /* ZIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF07200E219A3A9500F05DA4 /* ZIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5BE1BD72D0B9CBE00D2142E /* PatreonAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5BE1BD62D0B9CBE00D2142E /* PatreonAPI.plist */; };
 		D5C45FEF2BE992A80009DBB0 /* AltKit in Frameworks */ = {isa = PBXBuildFile; productRef = D5C45FEE2BE992A80009DBB0 /* AltKit */; };
+		D5C7DD012E26CF2E0048FF5C /* DeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9F4FCE1AAD7B87004C9500 /* DeltaCore.framework */; };
+		D5C7DD022E26CF2E0048FF5C /* DeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9F4FCE1AAD7B87004C9500 /* DeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C7DD042E26CF350048FF5C /* NESDeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD032E26CF350048FF5C /* NESDeltaCore.framework */; };
+		D5C7DD052E26CF350048FF5C /* NESDeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD032E26CF350048FF5C /* NESDeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C7DD072E26CF540048FF5C /* SNESDeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD062E26CF540048FF5C /* SNESDeltaCore.framework */; };
+		D5C7DD082E26CF540048FF5C /* SNESDeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD062E26CF540048FF5C /* SNESDeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C7DD0A2E26CF5A0048FF5C /* GBADeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD092E26CF5A0048FF5C /* GBADeltaCore.framework */; };
+		D5C7DD0B2E26CF5B0048FF5C /* GBADeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD092E26CF5A0048FF5C /* GBADeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C7DD0D2E26CF630048FF5C /* GBCDeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD0C2E26CF630048FF5C /* GBCDeltaCore.framework */; };
+		D5C7DD0E2E26CF630048FF5C /* GBCDeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD0C2E26CF630048FF5C /* GBCDeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C7DD122E26CF6F0048FF5C /* N64DeltaCore_RSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD0F2E26CF6F0048FF5C /* N64DeltaCore_RSP.framework */; };
+		D5C7DD132E26CF6F0048FF5C /* N64DeltaCore_RSP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD0F2E26CF6F0048FF5C /* N64DeltaCore_RSP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C7DD142E26CF6F0048FF5C /* N64DeltaCore_Video.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD102E26CF6F0048FF5C /* N64DeltaCore_Video.framework */; };
+		D5C7DD152E26CF6F0048FF5C /* N64DeltaCore_Video.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD102E26CF6F0048FF5C /* N64DeltaCore_Video.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C7DD162E26CF6F0048FF5C /* N64DeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD112E26CF6F0048FF5C /* N64DeltaCore.framework */; };
+		D5C7DD172E26CF6F0048FF5C /* N64DeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD112E26CF6F0048FF5C /* N64DeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C7DD192E26CF810048FF5C /* MelonDSDeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD182E26CF810048FF5C /* MelonDSDeltaCore.framework */; };
+		D5C7DD1A2E26CF810048FF5C /* MelonDSDeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5C7DD182E26CF810048FF5C /* MelonDSDeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5CDCCEE2A859DC200E22131 /* SyncValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CDCCEC2A859B2B00E22131 /* SyncValidationError.swift */; };
 		D5CDCCEF2A859E5300E22131 /* OSLog+Delta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CDCCC32A85765900E22131 /* OSLog+Delta.swift */; };
 		D5CDCCF02A859E5500E22131 /* UserDefaults+Delta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CDCCEA2A8593FC00E22131 /* UserDefaults+Delta.swift */; };
@@ -284,6 +297,8 @@
 		D5D7C20829E616CF00663793 /* FeatureContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C20729E616CF00663793 /* FeatureContainer.swift */; };
 		D5D7C20A29E61FA600663793 /* OptionToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C20929E61FA600663793 /* OptionToggleView.swift */; };
 		D5D7C20C29E624CB00663793 /* DisplayInlineKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C20B29E624CB00663793 /* DisplayInlineKey.swift */; };
+		D5DF87492E25AA74005CCF92 /* GPGXDeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF87472E25AA6B005CCF92 /* GPGXDeltaCore.framework */; };
+		D5DF874A2E25AA74005CCF92 /* GPGXDeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF87472E25AA6B005CCF92 /* GPGXDeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5E12AEB2D01157F000C7531 /* String+Profanity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E12AEA2D011579000C7531 /* String+Profanity.swift */; };
 		D5E12AED2D011640000C7531 /* Profanity.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5E12AEC2D01163A000C7531 /* Profanity.txt */; };
 		D5E76AAD2BE199890078C0C5 /* ShowTouches in Frameworks */ = {isa = PBXBuildFile; productRef = D5E76AAC2BE199890078C0C5 /* ShowTouches */; };
@@ -297,13 +312,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BFEBE58225D3388F00222319 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFFA71CF1AAC406100EE9DD1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BF6E70B925D2187800E41CD1;
-			remoteInfo = Systems;
-		};
 		D5D7C1FB29E60EDE00663793 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFFA71CF1AAC406100EE9DD1 /* Project object */;
@@ -320,7 +328,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BFCADF1F25D22FE2008D78FB /* Systems.framework in Embed Frameworks */,
+				D5C7DD022E26CF2E0048FF5C /* DeltaCore.framework in Embed Frameworks */,
+				D5C7DD152E26CF6F0048FF5C /* N64DeltaCore_Video.framework in Embed Frameworks */,
+				D5C7DD0E2E26CF630048FF5C /* GBCDeltaCore.framework in Embed Frameworks */,
+				D5DF874A2E25AA74005CCF92 /* GPGXDeltaCore.framework in Embed Frameworks */,
+				D5C7DD172E26CF6F0048FF5C /* N64DeltaCore.framework in Embed Frameworks */,
+				D5C7DD1A2E26CF810048FF5C /* MelonDSDeltaCore.framework in Embed Frameworks */,
+				D5C7DD052E26CF350048FF5C /* NESDeltaCore.framework in Embed Frameworks */,
+				D5B7242D2E26DC6700D3E5F3 /* ZIPFoundation.framework in Embed Frameworks */,
+				D5C7DD0B2E26CF5B0048FF5C /* GBADeltaCore.framework in Embed Frameworks */,
+				D5C7DD132E26CF6F0048FF5C /* N64DeltaCore_RSP.framework in Embed Frameworks */,
+				D5C7DD082E26CF540048FF5C /* SNESDeltaCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +624,14 @@
 		D5B6F5D22D6FC0F00061C365 /* FollowUsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUsFooterView.swift; sourceTree = "<group>"; };
 		D5B6F5D42D6FC23E0061C365 /* FollowUsFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowUsFooterView.xib; sourceTree = "<group>"; };
 		D5BE1BD62D0B9CBE00D2142E /* PatreonAPI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PatreonAPI.plist; sourceTree = "<group>"; };
+		D5C7DD032E26CF350048FF5C /* NESDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NESDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C7DD062E26CF540048FF5C /* SNESDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SNESDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C7DD092E26CF5A0048FF5C /* GBADeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GBADeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C7DD0C2E26CF630048FF5C /* GBCDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GBCDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C7DD0F2E26CF6F0048FF5C /* N64DeltaCore_RSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = N64DeltaCore_RSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C7DD102E26CF6F0048FF5C /* N64DeltaCore_Video.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = N64DeltaCore_Video.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C7DD112E26CF6F0048FF5C /* N64DeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = N64DeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C7DD182E26CF810048FF5C /* MelonDSDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MelonDSDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CDCCC32A85765900E22131 /* OSLog+Delta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Delta.swift"; sourceTree = "<group>"; };
 		D5CDCCEA2A8593FC00E22131 /* UserDefaults+Delta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Delta.swift"; sourceTree = "<group>"; };
 		D5CDCCEC2A859B2B00E22131 /* SyncValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncValidationError.swift; sourceTree = "<group>"; };
@@ -622,6 +648,7 @@
 		D5D7C20729E616CF00663793 /* FeatureContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureContainer.swift; sourceTree = "<group>"; };
 		D5D7C20929E61FA600663793 /* OptionToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionToggleView.swift; sourceTree = "<group>"; };
 		D5D7C20B29E624CB00663793 /* DisplayInlineKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayInlineKey.swift; sourceTree = "<group>"; };
+		D5DF87472E25AA6B005CCF92 /* GPGXDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPGXDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E12AEA2D011579000C7531 /* String+Profanity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Profanity.swift"; sourceTree = "<group>"; };
 		D5E12AEC2D01163A000C7531 /* Profanity.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Profanity.txt; sourceTree = "<group>"; };
 		D5E4F8622C2A5864008E8316 /* Delta 9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Delta 9.xcdatamodel"; sourceTree = "<group>"; };
@@ -643,17 +670,22 @@
 				D52CB8C62CE2B7B600B04458 /* RevenueCat in Frameworks */,
 				D52CB8C82CE2B7C800B04458 /* StoreKit.framework in Frameworks */,
 				BF69FBAA23E399AA0051BEEA /* CoreMotion.framework in Frameworks */,
-				BF69FBA223E375A20051BEEA /* libVBA-M.a in Frameworks */,
-				BFFDF04623E3D3A600931B96 /* libMupen64Plus.a in Frameworks */,
+				D5C7DD012E26CF2E0048FF5C /* DeltaCore.framework in Frameworks */,
+				D5C7DD0A2E26CF5A0048FF5C /* GBADeltaCore.framework in Frameworks */,
+				D5B7242C2E26DC6700D3E5F3 /* ZIPFoundation.framework in Frameworks */,
+				D5C7DD0D2E26CF630048FF5C /* GBCDeltaCore.framework in Frameworks */,
+				D5C7DD122E26CF6F0048FF5C /* N64DeltaCore_RSP.framework in Frameworks */,
+				D5DF87492E25AA74005CCF92 /* GPGXDeltaCore.framework in Frameworks */,
+				D5C7DD162E26CF6F0048FF5C /* N64DeltaCore.framework in Frameworks */,
 				D5EF1A202D84BD59001B06E6 /* rcheevos in Frameworks */,
+				D5C7DD042E26CF350048FF5C /* NESDeltaCore.framework in Frameworks */,
 				D5AE76C22C2B59240086471B /* KeychainAccess in Frameworks */,
 				D5D7C1FA29E60EDE00663793 /* libDeltaFeatures.a in Frameworks */,
-				BFCADF1E25D22FE2008D78FB /* Systems.framework in Frameworks */,
-				BF69FBC923E3A8380051BEEA /* libNestopia.a in Frameworks */,
 				1FA4ABA79AB72914FE414A61 /* libPods-Delta.a in Frameworks */,
+				D5C7DD072E26CF540048FF5C /* SNESDeltaCore.framework in Frameworks */,
+				D5C7DD142E26CF6F0048FF5C /* N64DeltaCore_Video.framework in Frameworks */,
 				D5E76AAD2BE199890078C0C5 /* ShowTouches in Frameworks */,
-				BFFDF03F23E3C28A00931B96 /* libGambatte.a in Frameworks */,
-				BFFDF03723E3BB2600931B96 /* libSnes9x.a in Frameworks */,
+				D5C7DD192E26CF810048FF5C /* MelonDSDeltaCore.framework in Frameworks */,
 				D5C45FEF2BE992A80009DBB0 /* AltKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -992,6 +1024,15 @@
 		BF9F4FCD1AAD7B25004C9500 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5C7DD182E26CF810048FF5C /* MelonDSDeltaCore.framework */,
+				D5C7DD0F2E26CF6F0048FF5C /* N64DeltaCore_RSP.framework */,
+				D5C7DD102E26CF6F0048FF5C /* N64DeltaCore_Video.framework */,
+				D5C7DD112E26CF6F0048FF5C /* N64DeltaCore.framework */,
+				D5C7DD0C2E26CF630048FF5C /* GBCDeltaCore.framework */,
+				D5C7DD092E26CF5A0048FF5C /* GBADeltaCore.framework */,
+				D5C7DD062E26CF540048FF5C /* SNESDeltaCore.framework */,
+				D5C7DD032E26CF350048FF5C /* NESDeltaCore.framework */,
+				D5DF87472E25AA6B005CCF92 /* GPGXDeltaCore.framework */,
 				D52CB8C72CE2B7C800B04458 /* StoreKit.framework */,
 				D5FB042B2C5AF40A008329DD /* libresolv.tbd */,
 				BF6E70C225D22F7600E41CD1 /* Systems.framework */,
@@ -1499,7 +1540,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BFEBE58325D3388F00222319 /* PBXTargetDependency */,
 				D5D7C1FC29E60EDE00663793 /* PBXTargetDependency */,
 			);
 			name = Delta;
@@ -1668,35 +1708,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Delta/Pods-Delta-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/DeltaCore/DeltaCore.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GBADeltaCore/GBADeltaCore.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GBCDeltaCore/GBCDeltaCore.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/../External/Harmony/Harmony/Model/Core Data/Harmony.xcdatamodeld",
 				"${PODS_ROOT}/../External/Harmony/Harmony/Model/Core Data/Migrations/Harmony2ToHarmony3.xcmappingmodel",
 				"${PODS_ROOT}/../External/Harmony/Harmony/Model/Core Data/Migrations/HarmonyToHarmony2.xcmappingmodel",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MelonDSDeltaCore/melonDS.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/N64DeltaCore/Mupen64Plus.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/NESDeltaCore/NESDeltaCore.bundle",
 				"${PODS_ROOT}/../External/Roxas/Roxas/RSTCollectionViewCell.xib",
 				"${PODS_ROOT}/../External/Roxas/Roxas/RSTPlaceholderView.xib",
-				"${PODS_CONFIGURATION_BUILD_DIR}/SNESDeltaCore/SNESDeltaCore.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DeltaCore.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GBADeltaCore.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GBCDeltaCore.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Harmony.momd",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Harmony2ToHarmony3.cdm",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HarmonyToHarmony2.cdm",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/melonDS.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Mupen64Plus.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NESDeltaCore.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSTCollectionViewCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSTPlaceholderView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SNESDeltaCore.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1763,13 +1789,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DeltaPreviews/Pods-DeltaPreviews-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/DeltaCore/DeltaCore.bundle",
 				"${PODS_ROOT}/../External/Roxas/Roxas/RSTCollectionViewCell.xib",
 				"${PODS_ROOT}/../External/Roxas/Roxas/RSTPlaceholderView.xib",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DeltaCore.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSTCollectionViewCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSTPlaceholderView.nib",
 			);
@@ -2041,11 +2065,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BFEBE58325D3388F00222319 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BF6E70B925D2187800E41CD1 /* Systems */;
-			targetProxy = BFEBE58225D3388F00222319 /* PBXContainerItemProxy */;
-		};
 		D5D7C1FC29E60EDE00663793 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D5D7C1F029E60DFF00663793 /* DeltaFeatures */;
@@ -2268,22 +2287,15 @@
 					"-ObjC",
 					"-l\"Alamofire\"",
 					"-l\"AppAuth\"",
-					"-l\"GBADeltaCore\"",
-					"-l\"GBCDeltaCore\"",
 					"-l\"GTMAppAuth\"",
 					"-l\"GTMSessionFetcher\"",
 					"-l\"GoogleAPIClientForREST\"",
 					"-l\"Harmony\"",
-					"-l\"MelonDSDeltaCore\"",
-					"-l\"N64DeltaCore\"",
-					"-l\"NESDeltaCore\"",
 					"-l\"Roxas\"",
 					"-l\"SDWebImage\"",
 					"-l\"SMCalloutView\"",
-					"-l\"SNESDeltaCore\"",
 					"-l\"SQLite.swift\"",
 					"-l\"SwiftyDropbox\"",
-					"-l\"ZIPFoundation\"",
 					"-l\"sqlite3\"",
 					"-framework",
 					"\"CoreGraphics\"",

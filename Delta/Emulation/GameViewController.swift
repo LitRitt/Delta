@@ -13,7 +13,7 @@ import DeltaCore
 import GBADeltaCore
 import N64DeltaCore
 import MelonDSDeltaCore
-import Systems
+import GPGXDeltaCore
 
 import Roxas
 import AltKit

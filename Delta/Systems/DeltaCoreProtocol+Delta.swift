@@ -14,8 +14,7 @@ import GBCDeltaCore
 import GBADeltaCore
 import N64DeltaCore
 import MelonDSDeltaCore
-
-import Systems
+import GPGXDeltaCore
 
 extension Delta
 {

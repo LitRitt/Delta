@@ -6,12 +6,6 @@ PODS:
   - AppAuth/Core (1.6.2)
   - AppAuth/ExternalUserAgent (1.6.2):
     - AppAuth/Core
-  - DeltaCore (0.1):
-    - ZIPFoundation
-  - GBADeltaCore (0.1):
-    - DeltaCore
-  - GBCDeltaCore (0.1):
-    - DeltaCore
   - GoogleAPIClientForREST/Core (1.3.11):
     - GTMSessionFetcher (>= 1.1.7)
   - GoogleAPIClientForREST/Drive (1.3.11):
@@ -40,44 +34,22 @@ PODS:
   - Harmony/Harmony-Dropbox (0.1):
     - Roxas
     - SwiftyDropbox (~> 5.0.0)
-  - MelonDSDeltaCore (0.1):
-    - DeltaCore
-  - N64DeltaCore (0.1):
-    - DeltaCore
-    - N64DeltaCore/RSP (= 0.1)
-    - N64DeltaCore/Video (= 0.1)
-  - N64DeltaCore/RSP (0.1):
-    - DeltaCore
-  - N64DeltaCore/Video (0.1):
-    - DeltaCore
-  - NESDeltaCore (0.1):
-    - DeltaCore
   - Roxas (0.1)
   - SDWebImage (3.8.3):
     - SDWebImage/Core (= 3.8.3)
   - SDWebImage/Core (3.8.3)
   - SMCalloutView (2.1.5)
-  - SNESDeltaCore (0.1):
-    - DeltaCore
   - SQLite.swift (0.12.2):
     - SQLite.swift/standard (= 0.12.2)
   - SQLite.swift/standard (0.12.2)
   - SwiftyDropbox (5.0.0):
     - Alamofire (~> 4.7.3)
-  - ZIPFoundation (0.9.11)
 
 DEPENDENCIES:
-  - DeltaCore (from `Cores/DeltaCore`)
-  - GBADeltaCore (from `Cores/GBADeltaCore`)
-  - GBCDeltaCore (from `Cores/GBCDeltaCore`)
   - Harmony (from `External/Harmony`)
-  - MelonDSDeltaCore (from `Cores/MelonDSDeltaCore`)
-  - N64DeltaCore (from `Cores/N64DeltaCore`)
-  - NESDeltaCore (from `Cores/NESDeltaCore`)
   - Roxas (from `External/Roxas`)
   - SDWebImage (~> 3.8)
   - SMCalloutView (~> 2.1.0)
-  - SNESDeltaCore (from `Cores/SNESDeltaCore`)
   - SQLite.swift (~> 0.12.0)
 
 SPEC REPOS:
@@ -92,50 +64,27 @@ SPEC REPOS:
     - SMCalloutView
     - SQLite.swift
     - SwiftyDropbox
-    - ZIPFoundation
 
 EXTERNAL SOURCES:
-  DeltaCore:
-    :path: Cores/DeltaCore
-  GBADeltaCore:
-    :path: Cores/GBADeltaCore
-  GBCDeltaCore:
-    :path: Cores/GBCDeltaCore
   Harmony:
     :path: External/Harmony
-  MelonDSDeltaCore:
-    :path: Cores/MelonDSDeltaCore
-  N64DeltaCore:
-    :path: Cores/N64DeltaCore
-  NESDeltaCore:
-    :path: Cores/NESDeltaCore
   Roxas:
     :path: External/Roxas
-  SNESDeltaCore:
-    :path: Cores/SNESDeltaCore
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
-  DeltaCore: 6a430005ea397fcd5b40b964effe41ac69cc9037
-  GBADeltaCore: c2f7ce5e5616ed63d2b99c9ba9a7e020f2263248
-  GBCDeltaCore: 27f09a1c88a4ac832aa549fbe34aaf277251b6b8
   GoogleAPIClientForREST: 0f19a8280dfe6471f76016645d26eb5dae305101
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
-  Harmony: 1d8166b6168eec8cce046c4366765d15f7e3b9fc
-  MelonDSDeltaCore: c0d16e1fa8dbaf77fb268c6f1ab344c6db4ace34
-  N64DeltaCore: 4eeb468746722952bcd5467ecb9ebe7df070f53a
-  NESDeltaCore: ffae3bba878fc505bac0914150a695ede7bc9550
+  Harmony: 97a11ba000d5a5dbdf13925cf3d55b8b33d3d8fa
   Roxas: 1990039f843f5dc284918dc82375feb80020ef62
   SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
   SMCalloutView: 5c0ee363dc8e7204b2fda17dfad38c93e9e23481
-  SNESDeltaCore: d9b60ba8851d5d9cc8ab61616cc72396c292c87b
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   SwiftyDropbox: 378b4425a2e8d0cb24c7b0f2e3af72bfbaaf1e73
-  ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: c14e4a610ac3b6803641cd873d8bc0dfd734ff14
+PODFILE CHECKSUM: 6b5241eda11a1dc24efa0ca7246dc1a2609773b5
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
