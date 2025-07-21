@@ -2753,7 +2753,6 @@
 				);
 				MARKETING_VERSION = 1.7.1;
 				OTHER_LDFLAGS = (
-					"-ld64",
 					"-ObjC",
 					"-l\"Alamofire\"",
 					"-l\"AppAuth\"",
@@ -2827,10 +2826,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.7.1;
-				OTHER_LDFLAGS = (
-					"-ld64",
-					"${inherited}",
-				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DIMPACTOR";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.Delta;
 				PROVISIONING_PROFILE = "";
