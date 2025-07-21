@@ -14,7 +14,7 @@ import DeltaCore
 import MelonDSDeltaCore
 import Roxas
 
-protocol SaveStatesViewControllerDelegate: class
+protocol SaveStatesViewControllerDelegate: AnyObject
 {
     func saveStatesViewController(_ saveStatesViewController: SaveStatesViewController, updateSaveState saveState: SaveState)
     func saveStatesViewController(_ saveStatesViewController: SaveStatesViewController, loadSaveState saveState: SaveStateProtocol)
