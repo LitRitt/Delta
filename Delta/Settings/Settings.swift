@@ -37,6 +37,7 @@ extension Settings.Name
     static let preferredWFCServer: Settings.Name = "preferredWFCServer"
     static let customWFCServer: Settings.Name = "customWFCServer"
     static let opensGamesInNewWindow: Settings.Name = "opensGamesInNewWindow"
+    static let preferredGBColorPalette: Settings.Name = "preferredGBColorPalette"
 }
 
 extension Settings
@@ -306,6 +307,17 @@ extension Settings
         set {
             UserDefaults.standard.customWFCServer = newValue
             NotificationCenter.default.post(name: Settings.didChangeNotification, object: nil, userInfo: [NotificationUserInfoKey.name: Name.customWFCServer])
+        }
+    }
+    
+    static var preferredGBColorPalette: GBCColorPalette? {
+        get {
+            guard let rawValue = UserDefaults.standard.preferredGBColorPalette else { return nil }
+            return GBCColorPalette(rawValue: rawValue)
+        }
+        set {
+            UserDefaults.standard.preferredGBColorPalette = newValue?.rawValue
+            NotificationCenter.default.post(name: Settings.didChangeNotification, object: nil, userInfo: [NotificationUserInfoKey.name: Name.preferredGBColorPalette])
         }
     }
     
@@ -604,4 +616,6 @@ private extension UserDefaults
     @NSManaged var customWFCServer: String?
     
     @NSManaged var opensGamesInNewWindow: Bool
+    
+    @NSManaged var preferredGBColorPalette: String?
 }

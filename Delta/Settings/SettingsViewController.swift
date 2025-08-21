@@ -61,6 +61,12 @@ private extension SettingsViewController
         case status
     }
     
+    enum CoresRow: Int, CaseIterable
+    {
+        case gbc
+        case ds
+    }
+    
     enum AdvancedRow: Int, CaseIterable
     {
         case exportLog
@@ -471,6 +477,12 @@ private extension SettingsViewController
         UIApplication.shared.open(safariURL, options: [:])
     }
     
+    func showGBCSettings()
+    {
+        let hostingController = GBCCoreSettingsView.makeViewController()
+        self.navigationController?.pushViewController(hostingController, animated: true)
+    }
+    
     @available(iOS 14, *)
     func showContributors()
     {
@@ -723,8 +735,15 @@ extension SettingsViewController
             }
             
         case .cores:
-            let preferredCore = Settings.preferredCore(for: .ds)
-            cell.detailTextLabel?.text = preferredCore?.metadata?.name.value ?? preferredCore?.name ?? NSLocalizedString("Unknown", comment: "")
+            let row = CoresRow(rawValue: indexPath.row)!
+            switch row
+            {
+            case .ds:
+                let preferredCore = Settings.preferredCore(for: .ds)
+                cell.detailTextLabel?.text = preferredCore?.metadata?.name.value ?? preferredCore?.name ?? NSLocalizedString("Unknown", comment: "")
+                
+            case .gbc: break
+            }
             
         case .patreon:
             guard #available(iOS 16, *) else { break }
@@ -787,8 +806,15 @@ extension SettingsViewController
         case .controllers: self.performSegue(withIdentifier: Segue.controllers.rawValue, sender: cell)
         case .controllerSkins: self.performSegue(withIdentifier: Segue.controllerSkins.rawValue, sender: cell)
         case .display: self.performSegue(withIdentifier: Segue.altAppIcons.rawValue, sender: cell)
-        case .cores: self.performSegue(withIdentifier: Segue.dsSettings.rawValue, sender: cell)
         case .patreon, .controllerOpacity, .gameAudio, .multitasking, .hapticFeedback, .gestures, .airPlay, .hapticTouch, .syncing: break
+        case .cores:
+            let row = CoresRow(rawValue: indexPath.row)!
+            switch row
+            {
+            case .gbc: self.showGBCSettings()
+            case .ds: self.performSegue(withIdentifier: Segue.dsSettings.rawValue, sender: cell)
+            }
+        
         case .advanced:
             let row = AdvancedRow(rawValue: indexPath.row)!
             switch row

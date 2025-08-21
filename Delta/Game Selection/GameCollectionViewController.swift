@@ -16,6 +16,7 @@ import RegexBuilder
 @_spi(Internal) import DeltaCore
 
 import MelonDSDeltaCore
+import GBCDeltaCore
 
 import Roxas
 import Harmony
@@ -259,6 +260,22 @@ extension GameCollectionViewController
             {
                 // Otherwise, reset emulation and optionally load self.activeSaveState below to "resume".
                 destinationViewController.game = game
+            }
+            
+            if let emulatorBridge = destinationViewController.emulatorCore?.deltaCore.emulatorBridge as? GBCEmulatorBridge
+            {
+                if let preferredPalette = Settings.preferredGBColorPalette
+                {
+                    emulatorBridge.backgroundPalette = preferredPalette.palettes.0
+                    emulatorBridge.spritePalette = preferredPalette.palettes.1
+                    emulatorBridge.foregroundPalette = preferredPalette.palettes.2
+                }
+                else
+                {
+                    emulatorBridge.backgroundPalette = nil
+                    emulatorBridge.spritePalette = nil
+                    emulatorBridge.foregroundPalette = nil
+                }
             }
 
             if let emulatorBridge = destinationViewController.emulatorCore?.deltaCore.emulatorBridge as? MelonDSEmulatorBridge
