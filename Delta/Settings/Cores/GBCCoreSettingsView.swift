@@ -18,9 +18,25 @@ struct GBCCoreSettingsView: CoreSettingsView
     var additionalSections: some View {
         Section {
             Picker("Color Palette", selection: $selectedColorPalette) {
-                Text("Default").tag(Optional<GBCColorPalette>.none)
+                Label {
+                    Text("Default")
+                } icon: {
+                    colorPreview(for: nil)
+                }
+                .tag(Optional<GBCColorPalette>.none)
+                
                 ForEach(GBCColorPalette.allCases, id: \.self) { palette in
-                    Text(palette.localizedName).tag(palette)
+                    Button {
+                        selectedColorPalette = palette
+                    } label: {
+                        Label {
+                            Text(palette.localizedName)
+                        } icon: {
+                            colorPreview(for: palette)
+                        }
+                        Text(palette.localizedDescription)
+                    }
+                    .tag(palette)
                 }
             }
             .onChange(of: selectedColorPalette) { newPalette in
@@ -29,8 +45,39 @@ struct GBCCoreSettingsView: CoreSettingsView
         } header: {
             Text("Colors")
         }
-        .onAppear() {
+        .onAppear {
             selectedColorPalette = Settings.preferredGBColorPalette
+        }
+    }
+}
+
+extension GBCCoreSettingsView
+{
+    private func colorPreview(for palette: GBCColorPalette?) -> Image
+    {
+        Image(size: CGSize(width: 58, height: 22)) { ctx in
+            // First preview color
+            let ellipse1 = Path(ellipseIn: CGRect(origin: CGPoint(x: 1.5, y: 0.5), size: CGSize(width: 21, height: 21)))
+            ctx.fill(
+                ellipse1,
+                with: .color(Color(uiColor: palette?.previewColors.0 ?? UIColor.white))
+            )
+            ctx.stroke(
+                ellipse1,
+                with: .color(Color(uiColor: .systemGray4)),
+                lineWidth: 0.5
+            )
+            // Second preview color
+            let ellipse2 = Path(ellipseIn: CGRect(origin: CGPoint(x: 26, y: 0.5), size: CGSize(width: 21, height: 21)))
+            ctx.fill(
+                ellipse2,
+                with: .color(Color(uiColor: palette?.previewColors.1 ?? UIColor.black))
+            )
+            ctx.stroke(
+                ellipse2,
+                with: .color(Color(uiColor: .systemGray4)),
+                lineWidth: 0.5
+            )
         }
     }
 }

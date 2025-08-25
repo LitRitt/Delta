@@ -40,6 +40,7 @@
 		8279ED142E53C7A4008995FA /* N64CoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8279ED132E53C7A4008995FA /* N64CoreSettingsView.swift */; };
 		8279ED162E53C8BC008995FA /* GenesisCoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8279ED152E53C8BC008995FA /* GenesisCoreSettingsView.swift */; };
 		82B3FAA92E3D592D002F179E /* GBCCoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B3FAA02E3D5926002F179E /* GBCCoreSettingsView.swift */; };
+		82C63BDB2E57BB4700B0C812 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C63BDA2E57BB4700B0C812 /* UIColor+Hex.swift */; };
 		82C83A732E4FCC030020711E /* CoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C83A722E4FCC030020711E /* CoreSettingsView.swift */; };
 		87343D7B985519A5890A61C6 /* libPods-DeltaPreviews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3E5A45AB20C8A87754453B /* libPods-DeltaPreviews.a */; };
 		AC1C991029F8B8C30020E6E4 /* ToastNotificationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C990F29F8B8C30020E6E4 /* ToastNotificationOptions.swift */; };
@@ -561,6 +562,7 @@
 		8279ED132E53C7A4008995FA /* N64CoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N64CoreSettingsView.swift; sourceTree = "<group>"; };
 		8279ED152E53C8BC008995FA /* GenesisCoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenesisCoreSettingsView.swift; sourceTree = "<group>"; };
 		82B3FAA02E3D5926002F179E /* GBCCoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBCCoreSettingsView.swift; sourceTree = "<group>"; };
+		82C63BDA2E57BB4700B0C812 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		82C83A722E4FCC030020711E /* CoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSettingsView.swift; sourceTree = "<group>"; };
 		8ECE6641DE30D01EA30FE7F6 /* Pods-DeltaPreviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaPreviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaPreviews/Pods-DeltaPreviews.release.xcconfig"; sourceTree = "<group>"; };
 		A01281C7023C0041B25963BE /* Pods-DeltaPreviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaPreviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaPreviews/Pods-DeltaPreviews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -938,6 +940,7 @@
 				D5F702FC2C24CE5300DCD271 /* UISceneSession+Delta.swift */,
 				D5E12AEA2D011579000C7531 /* String+Profanity.swift */,
 				C6F24AD82D64B550002F939F /* PauseViewController+Lu.swift */,
+				82C63BDA2E57BB4700B0C812 /* UIColor+Hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2440,6 +2443,7 @@
 				D5A287252C23A1AC009883C3 /* SkinDebugging.swift in Sources */,
 				D56F7ABC2B05988700490ACB /* AttributedHeaderFooterView.swift in Sources */,
 				BFAB9F7D219A43380080EC7D /* SyncManager.swift in Sources */,
+				82C63BDB2E57BB4700B0C812 /* UIColor+Hex.swift in Sources */,
 				BFCEA67E1D56FF640061A534 /* UIViewControllerContextTransitioning+Conveniences.swift in Sources */,
 				D55917DA2B51D097007B7DC0 /* LocalDeviceController.swift in Sources */,
 				BF1173501DA32CF600047DF8 /* ControllersSettingsViewController.swift in Sources */,
