@@ -22,6 +22,10 @@ public class GameCollection: _GameCollection
         return self.system?.localizedShortName ?? NSLocalizedString("Unknown", comment: "")
     }
     
+    @objc var displayName: String {
+        return self.system?.localizedDisplayName ?? NSLocalizedString("Unknown", comment: "")
+    }
+    
     var system: System? {
         let gameType = GameType(rawValue: self.identifier)
         

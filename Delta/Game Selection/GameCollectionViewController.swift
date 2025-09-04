@@ -103,7 +103,7 @@ class GameCollectionViewController: UICollectionViewController
 {
     var gameCollection: GameCollection? {
         didSet {
-            self.title = self.gameCollection?.shortName
+            self.title = self.gameCollection?.displayName
             self.updateDataSource()
         }
     }
@@ -170,6 +170,11 @@ extension GameCollectionViewController
         if UIApplication.shared.supportsMultipleScenes
         {
             self.collectionView?.dragDelegate = self
+        }
+        
+        if #available(iOS 26, *)
+        {
+            self.collectionView?.topEdgeEffect.style = .soft
         }
         
         self.update()

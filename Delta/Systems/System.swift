@@ -64,6 +64,19 @@ extension System
         }
     }
     
+    var localizedDisplayName: String {
+        switch self
+        {
+        case .nes: return NSLocalizedString("NES", comment: "")
+        case .snes: return NSLocalizedString("Super Nintendo", comment: "")
+        case .n64: return NSLocalizedString("Nintendo 64", comment: "")
+        case .gbc: return NSLocalizedString("Game Boy Color", comment: "")
+        case .gba: return NSLocalizedString("Game Boy Advance", comment: "")
+        case .ds: return NSLocalizedString("Nintendo DS", comment: "")
+        case .genesis: return NSLocalizedString("Sega Genesis", comment: "")
+        }
+    }
+    
     var year: Int {
         switch self
         {

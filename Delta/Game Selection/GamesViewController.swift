@@ -122,7 +122,15 @@ extension GamesViewController
         self.pageControl.centerXAnchor.constraint(equalTo: (self.navigationController?.toolbar.centerXAnchor)!, constant: 0).isActive = true
         self.pageControl.centerYAnchor.constraint(equalTo: (self.navigationController?.toolbar.centerYAnchor)!, constant: 0).isActive = true
         
-        if #available(iOS 16, *)
+        if #available(iOS 26.0, *)
+        {
+            let resumeButton = UIBarButtonItem(image: UIImage(systemName: "play"), style: .prominent, target: self, action:  #selector(GamesViewController.resumeGame))
+            resumeButton.isHidden = true
+            self.resumeButton = resumeButton
+            
+            self.navigationItem.setRightBarButtonItems([self.importButton, resumeButton], animated: false)
+        }
+        else
         {
             let resumeButton = UIBarButtonItem(title: NSLocalizedString("Resume", comment: ""), style: .done, target: self, action: #selector(GamesViewController.resumeGame))
             resumeButton.isHidden = true
@@ -133,10 +141,10 @@ extension GamesViewController
         
         if let navigationController = self.navigationController
         {
-            if #available(iOS 13.0, *)
+            navigationController.overrideUserInterfaceStyle = .dark
+            
+            if #unavailable(iOS 26)
             {
-                navigationController.overrideUserInterfaceStyle = .dark
-                
                 let navigationBarAppearance = navigationController.navigationBar.standardAppearance.copy()
                 navigationBarAppearance.backgroundEffect = UIBlurEffect(style: .dark)
                 navigationController.navigationBar.standardAppearance = navigationBarAppearance
@@ -145,17 +153,8 @@ extension GamesViewController
                 let toolbarAppearance = navigationController.toolbar.standardAppearance.copy()
                 toolbarAppearance.backgroundEffect = UIBlurEffect(style: .dark)
                 navigationController.toolbar.standardAppearance = toolbarAppearance
-                
-                if #available(iOS 15, *)
-                {
-                    navigationController.toolbar.scrollEdgeAppearance = toolbarAppearance
-                }
+                navigationController.toolbar.scrollEdgeAppearance = toolbarAppearance
             }
-            else
-            {
-                navigationController.navigationBar.barStyle = .blackTranslucent
-                navigationController.toolbar.barStyle = .blackTranslucent
-            }            
         }
         
         if #available(iOS 14, *)
@@ -290,7 +289,11 @@ private extension GamesViewController
             searchResultsController?.dataSource.predicate = searchValue.predicate
             return nil
         }
-        self.searchController?.searchBar.barStyle = .black
+        
+        if #unavailable(iOS 26)
+        {
+            self.searchController?.searchBar.barStyle = .black
+        }
         
         self.navigationItem.searchController = self.searchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
@@ -699,6 +702,13 @@ extension GamesViewController: UIPageViewControllerDataSource, UIPageViewControl
         }
         
         self.title = pageViewController.viewControllers?.first?.title
+    }
+    
+    // Fixes iOS 26 Navigation Bar by indicating correct scroll view
+    override func contentScrollView(for edge: NSDirectionalRectEdge) -> UIScrollView?
+    {
+        let viewController = self.pageViewController?.viewControllers?.first as? UICollectionViewController
+        return viewController?.collectionView
     }
 }
 
