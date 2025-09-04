@@ -81,6 +81,7 @@ class PausePresentationController: UIPresentationController
         
         self.blurringView.frame = self.containerView!.frame
         self.blurringView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.blurringView.overrideUserInterfaceStyle = .dark
         self.containerView?.addSubview(self.blurringView)
         
         self.vibrancyView.frame = self.containerView!.frame
@@ -91,11 +92,19 @@ class PausePresentationController: UIPresentationController
         self.vibrancyView.contentView.addSubview(self.contentView)
         
         self.presentationAnimator.addAnimations {
-            let blurEffect = UIBlurEffect(style: .dark)
+            if #available(iOS 26, *)
+            {
+                let glass = UIGlassEffect(style: .regular)
+                glass.tintColor = .black.withAlphaComponent(0.3)
+                
+                self.blurringView.effect = glass
+            }
+            else
+            {
+                self.blurringView.effect = UIBlurEffect(style: .dark)
+            }
             
-            self.blurringView.effect = blurEffect
-            self.vibrancyView.effect = UIVibrancyEffect(blurEffect: blurEffect)
-            
+            self.vibrancyView.effect = UIVibrancyEffect(blurEffect: UIBlurEffect(style: .dark))
             self.contentView.alpha = 1.0
         }
         
@@ -107,10 +116,23 @@ class PausePresentationController: UIPresentationController
     override func dismissalTransitionWillBegin()
     {
         self.presentingViewController.transitionCoordinator?.animate(alongsideTransition: { context in
-            self.blurringView.effect = nil
+            // TODO: check if alpha animation is working in later iOS 26 versions and, ideally, if blur effect animation is fixed
+            
+            if #available(iOS 26, *)
+            {
+                // Annoying workaround bc 0.0 breaks the layout
+                self.blurringView.alpha = 0.02
+            }
+            else
+            {
+                self.blurringView.effect = nil
+            }
+            
             self.vibrancyView.effect = nil
             self.contentView.alpha = 0.0
-        }, completion: nil)
+        }) { _ in
+            self.blurringView.effect = nil
+        }
     }
     
     override func dismissalTransitionDidEnd(_ completed: Bool)

@@ -114,12 +114,10 @@ private extension GridMenuViewController
     {
         let pauseItem = self.items[indexPath.item]
         
-        cell.maximumImageSize = CGSize(width: 60, height: 60)
+        cell.maximumImageSize = CGSize(width: 78, height: 78)
         
         cell.imageView.contentMode = .center
-        cell.imageView.layer.borderWidth = 2
-        cell.imageView.layer.borderColor = self.view.tintColor.cgColor
-        cell.imageView.layer.cornerRadius = 10
+        cell.imageView.layer.cornerRadius = (cell.maximumImageSize.height / 2)
         
         cell.textLabel.text = pauseItem.text
         cell.textLabel.textColor = self.view.tintColor
@@ -132,10 +130,9 @@ private extension GridMenuViewController
         }
         else
         {
-            
             cell.imageView.image = pauseItem.image
             cell.imageView.tintColor = self.view.tintColor
-            cell.imageView.backgroundColor = UIColor.clear
+            cell.imageView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         }
         
         cell.isImageViewVibrancyEnabled = self.isVibrancyEnabled

@@ -37,6 +37,13 @@ class PauseStoryboardSegue: UIStoryboardSegue
         self.destination.view.frame = self.source.view.frame
         self.destination.view.layoutIfNeeded()
         
+        if #available(iOS 26, *)
+        {
+            self.destination.view.clipsToBounds = true
+            self.destination.view.layer.cornerRadius = 38.0
+            self.destination.view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        }
+        
         super.perform()
     }
 }
